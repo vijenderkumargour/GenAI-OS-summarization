@@ -7,6 +7,7 @@ const MainContent = () => {
   const [file, setFile] = useState(null);
   const [error, setError] = useState("");
   const [activeTab, setActiveTab] = useState("PDF");
+  const [summaryLength, setsummaryLength] = useState('long');
 
   const MAX_FILE_SIZE_MB = 5;
 
@@ -58,6 +59,7 @@ const MainContent = () => {
   const handleSummarize = () => {
     if (file) {
       console.log("File to summarize:", file);
+      console.log("summary length:", summaryLength);
     } else {
       setError("No file uploaded. Please upload a PDF to summarize.");
     }
@@ -73,7 +75,7 @@ const MainContent = () => {
         return (
           <>
             <div className="float-end mt-4">
-              <Range />
+              <Range setsummaryLength={setsummaryLength} />
             </div>
 
             <div
