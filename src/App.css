@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar-item {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background-color: #f8f9fa;
+  /* Light gray */
+  color: #007bff;
+  /* Bootstrap primary color */
+}
+
+
+/*  button css*/
+.btn-gradient {
+  background: linear-gradient(90deg, #ff925f, #feb47b);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-glow {
+  border: 2px solid #007bff;
+  color: #007bff;
+  background: transparent;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-glow:hover {
+  color: white;
+  background: #007bff;
+  box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.4);
+}
+
+.btn-glass {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.4);
+  color: white;
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.3);
+}
