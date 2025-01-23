@@ -129,6 +129,21 @@ const MainContent = () => {
 
 
             </div>
+            {file && <div className="d-flex justify-content-end my-2">
+              <button
+                className="btn btn-info mx-2"
+                onClick={handleClear}
+              >
+                Clear
+              </button>
+              <button
+                className="btn btn-gradient"
+                onClick={handleSummarize}
+              >
+                Summarize
+              </button>
+
+            </div>}
           </>
         );
       case "Audio":
@@ -170,21 +185,7 @@ const MainContent = () => {
 
         {/* Dynamic Content */}
         {renderContent()}
-        {file && <div className="d-flex justify-content-end my-2">
-          <button
-            className="btn btn-info mx-2"
-            onClick={handleClear}
-          >
-            Clear
-          </button>
-          <button
-            className="btn btn-gradient"
-            onClick={handleSummarize}
-          >
-            Summarize
-          </button>
 
-        </div>}
       </div>
     </div>
   );
